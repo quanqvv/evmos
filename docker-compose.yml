@@ -6,6 +6,7 @@ services:
     image: "evmos/node"
     ports:
       - "26656-26657:26656-26657"
+      - "8545-8546:8545-8546"
     volumes:
       - ./build/node0/evmosd:/evmos:Z
     command:
